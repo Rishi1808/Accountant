@@ -558,24 +558,29 @@ body {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+
+
+
+
 .cards {
-    display: flex;
+   display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line if necessary */
     justify-content: space-evenly; /* Spread items evenly across the container */
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto; /* Center align horizontally */
+    gap: 20px; /* Adjust the gap between cards */
+    max-width: 1200px; /* Limit the maximum width of the card container */
+    width: 100%; /* Ensure the container takes full width of its parent */
+    margin: 0 auto; /
+   
 }
 
 .custom-card {
     position: relative;
     height: 200px;
     width: 250px;
-    border-radius: 5%;
+    border-radius: 2%;
     margin: 10px;
     perspective: 1200px;
-    transition: transform 0.3s ease;
 }
 
 .custom-card:hover .custom-cover {
@@ -583,31 +588,34 @@ body {
 }
 
 .custom-cover {
+  
     position: absolute;
     height: 100%;
     width: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.3s ease;
+    transition: transform 2.3s;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    border-radius: 5%;
 }
 
 .custom-item-a {
-    background-image: url('images/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg');
+  border-radius: 5%;
+    background-image: url('images/tingey-injury-law-firm-yCdPU73kGSc-unsplash.jpg'); /* Adjust your image path */
 }
 
 .custom-item-b {
+  border-radius: 5%;
     background-image: url('images/brooke-cagle--uHVRvDr7pg-unsplash.jpg');
 }
-
 .custom-item-c {
+  border-radius: 5%;
     background-image: url('images/bibhash-polygon-cafe-banerjee-li6MjNxlS_U-unsplash.jpg');
 }
 
 .custom-item-d {
+  border-radius: 5%;
     background-image: url('images/kelly-sikkema-M98NRBuzbpc-unsplash.jpg');
 }
 
@@ -617,6 +625,7 @@ body {
     bottom: 15px;
     left: 20px;
     color: white;
+   
     font-size: 1.4em;
     z-index: 2;
 }
@@ -624,10 +633,11 @@ body {
 .custom-card-back {
     position: absolute;
     height: 100%;
+    border-radius: 5%;
     width: 100%;
     background: rgba(255, 255, 255, 0.8); /* Adjust opacity as needed */
     transform-style: preserve-3d;
-    transition: transform 0.3s ease;
+    transition: transform 2.3s;
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
@@ -636,13 +646,22 @@ body {
     padding: 20px;
     box-sizing: border-box;
     backface-visibility: hidden;
-    border-radius: 5%;
 }
 
 .custom-card-back p {
+
     font-weight: 200;
+    padding: 11px 70px;
+    
+    background-color: grey;
     font-size: 1em;
     color: black;
     text-align: center;
     margin: 0;
+}
+
+.cards
+{
+  display: flex;
+  justify-content: center;
 }
